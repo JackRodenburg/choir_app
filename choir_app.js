@@ -28,9 +28,11 @@ function displaySongs(songs) {
 
 function filterSongs() {
     const searchInput = document.getElementById('search-box').value.toLowerCase();
+    const normalizedSearchInput = searchInput.replace(/[^a-z0-9]+/gi, ''); // Normalize input
     const songList = document.querySelectorAll('#song-list li');
     songList.forEach(function(song) {
         const songText = song.textContent.toLowerCase();
-        song.style.display = songText.includes(searchInput) ? '' : 'none';
+        const normalizedSongText = songText.replace(/[^a-z0-9]+/gi, ''); // Normalize song title
+        song.style.display = normalizedSongText.includes(normalizedSearchInput) ? '' : 'none';
     });
 }
