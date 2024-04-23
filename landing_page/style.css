@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.link-container {
+    text-align: center;
+}
+
+.link-container h1 {
+    color: #333;
+}
+
+.link-container p {
+    margin: 20px 0;
+}
+
+.icon, .choir-book {
+    width: 50px;  /* Adjust size as needed */
+    height: 50px; /* Making sure icons are uniformly sized */
+    margin: 10px;
+    border-radius: 5px; /* Rounded corners for a more modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Subtle border for definition */
+    background-color: #fff; /* Background color for the icon */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
+}
+
+.choir-book {
+    width: 100px; /* Slightly wider to accommodate text */
+}
+
+.choir-icon {
+    font-size: 14px; /* Font size for 'Choir' text */
+    color: #333; /* Text color */
+    font-weight: bold; /* Bold for visibility */
+    text-transform: lowercase; /* Uppercase for stylistic preference */
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img.icon {
+    width: 50px; /* Specific width for image icons to override previous general setting */
+    height: auto; /* Maintain aspect ratio */
+}
